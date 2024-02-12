@@ -1,0 +1,673 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@300&family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Montserrat:wght@300&family=Oswald:wght@300&family=PT+Sans&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* variables */
+:root {
+    --gray: hsl(0, 0%, 75%);
+    --dark-grayish: #232222;
+    --cyan-green: hsl(160, 80%, 65%);
+
+}
+
+html {
+    font-size: 16px;
+}
+h2 {
+    font-size: 4rem;
+}
+.white {
+    background-color: #fff;
+}
+.black {
+    background-color: #000;
+}
+
+/* <--Section-1--> */
+.header {
+    padding: 0;
+    height: 70vh;
+    position: relative;
+    background: url("https://www.0spam.com/wp-content/uploads/2019/05/c12c02567be576d078c6a4c31b11b9c6.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.header::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+
+.plus {
+    display: flex;
+    gap: 10px;
+    margin: 3vh;
+    left: 80%;
+    position: absolute;
+    color: #fff;
+    font-size: 10px;
+    align-items: center;
+}
+
+#title {
+    font-size: 7rem;
+    font-weight: 700;
+
+}
+
+.heading {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(25%, 50%);
+    color: #fff;
+}
+
+#content {
+    position: absolute;
+
+}
+
+.sidebar {
+    padding: 3vh 0;
+    display: grid;
+    float: left;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 17vh;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+
+#vertical-text {
+    transform: rotate(270deg);
+
+
+}
+
+.vl {
+    border-left: 0.1px solid #fff;
+    position: absolute;
+    opacity: 0.2;
+    height: 55vh;
+    left: 70px;
+    top: 0;
+
+}
+
+/* <--Section-2--> */
+.application {
+    width: 65%;
+    margin: 15vh 17.5% 25vh;
+
+
+}
+
+.application p {
+    font-weight: 200;
+}
+
+.application-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.application-content p {
+    margin-top: 16px;
+
+}
+
+.applications {
+    margin: 50px 0;
+    display: flex;
+    gap: 10%;
+}
+
+.card h3 {
+    line-height: 13px;
+}
+
+
+#grey {
+    color: var(--gray)
+}
+
+/* <--section-3--> */
+.main {
+    color: #fff;
+    background-color: var(--dark-grayish);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-img {
+    width: 100%;
+    background-size: contain;
+    margin-top: -70px;
+    filter: brightness(50%);
+}
+
+.grid-container {
+    margin: 100px auto;
+    display: grid;
+    top: 50vh;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 60%;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.hl {
+    opacity: 0.2;
+    margin: 10px auto;
+    width: 65%;
+}
+
+.to-do-para {
+    font-weight: 600;
+}
+
+.to-do {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 20px;
+    margin: 10vh 0 17vh;
+    justify-content: center;
+    width: 50%;
+}
+
+.to-do-products {
+    position: relative;
+    padding: 17%;
+    z-index: 2;
+}
+
+#dots {
+    position: relative;
+    top: 105%;
+    left: 70%;
+
+
+}
+
+.icon {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.to-do h3 {
+    margin: 1rem 0;
+}
+
+.to-do p {
+    font-family: 'PT Sans', sans-serif;
+    color: grey;
+}
+
+/* <--section-4--> */
+
+#dotted-rectangle {
+    position: absolute;
+    right: 40%;
+    top: 50%;
+    transform: translate(70%, 70%);
+}
+
+/* <--section-3--> */
+
+.portfolio {
+    display: flex;
+    gap: 9%;
+    justify-content: center;
+    font-size: large;
+}
+
+.portfolio-a {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cyan-green);
+    width: 28%;
+    padding: 2% 4%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.portfolio-b {
+    width: 70%;
+    width: 28%;
+    margin-top: 30px;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.grid-a {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.grid-b {
+    display: grid;
+    grid-template-areas:
+        'img profile'
+        'img profile';
+    gap: 5px;
+    text-align: center;
+}
+
+#item1 {
+    grid-area: img;
+
+}
+
+#item2 {
+    grid-area: profile;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+#item3 {
+    grid-area: bubble;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: right;
+}
+
+.quotes {
+    display: flex;
+    color: #fff;
+    flex-direction: row;
+    justify-content: center;
+    gap: 9%;
+    margin: 5rem 0;
+    font-weight: 600;
+}
+
+.quotes-a {
+    width: 28%;
+}
+
+.quotes-b {
+    font-family: 'Barlow', sans-serif;
+    font-weight: lighter;
+    width: 28%;
+    word-spacing: 1px;
+
+}
+
+/* <--section-4--> */
+
+.pic-ctn {
+    position: relative;
+    display: flex;
+    margin: 15vh auto 25vh;
+    width: 65%;
+    gap: 2%;
+    height: 170px;
+}
+
+.pic {
+    width: 170px;
+    height: 200px;
+    filter: grayscale(100%);
+}
+
+.profile-card {
+    margin-bottom: 15rem;
+    ;
+}
+
+.profile-card p {
+    color: rgb(182, 177, 177);
+}
+
+.brands {
+    display: flex;
+    justify-content: center;
+    gap: 9%;
+
+}
+
+.brands-a {
+    width: 21%;
+    font-weight: 600;
+}
+
+
+table,
+td {
+    border: 1px solid rgb(61, 61, 61, 0.1);
+}
+
+table {
+    border-collapse: collapse;
+    width: 35%;
+}
+
+td {
+    height: 75px;
+    text-align: center;
+}
+
+.footer {
+    margin: 7% 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-a {
+    width: 65%;
+    display: flex;
+    margin: 7% 5% 0;
+    justify-content: space-between;
+
+}
+
+.footer-a-1 {
+    text-align: left;
+    width: 65%;
+    margin: 2rem 0;
+    color: silver;
+}
+
+.footer-a-2 {
+    text-align: left;
+    width: 65%;
+    color: white;
+    text-decoration-color: rgb(92, 242, 182);
+    text-decoration-line: underline;
+    display: inline;
+}
+
+.contact-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+    align-items: center;
+}
+
+.footer-hl {
+    width: 70%;
+    opacity: 0.1;
+    margin: 5% 0 2%;
+}
+
+.footer-b {
+    width: 65%;
+    display: flex;
+    margin: 0 3% 2%;
+    justify-content: space-between;
+}
+
+
+#globe-img {
+    width: 80%;
+    height: 100%;
+    border-radius: 50%;
+    background: radial-gradient(circle, transparent 100%, #000 71%);
+    position: absolute;
+    overflow: hidden;
+    top: 65%;
+    opacity: 0.05;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+
+@media screen and (max-width:800px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    #title {
+        font-size: 4rem;
+    }
+
+    .plus {
+        margin: 0;
+        gap: 0;
+    }
+
+    .application {
+        align-items: center;
+        text-align: center;
+        margin: 15vh 17.5%;
+    }
+
+    .applications {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    .to-do {
+        grid-template-rows: repeat(3, fr);
+        grid-template-columns: auto;
+        margin-top: 3vh;
+    }
+
+    .card {
+        width: 50vw;
+        height: 100px;
+
+    }
+
+    .portfolio {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .portfolio-a {
+        width: 70%;
+        text-align: left;
+        margin-top: 0;
+
+    }
+
+    .portfolio-b {
+        width: 70%;
+        font-size: 2rem;
+
+    }
+
+    .quotes {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .quotes-a {
+
+        width: 70%;
+    }
+
+    .quotes-b {
+
+        width: 70%;
+    }
+
+    .footer-b {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:1050px) {
+    .brands {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+}
+
+@media screen and (max-width:1250px) {
+    .pic-ctn {
+        width: 100%;
+        justify-content: center;
+        margin: 10vh 0 25vh;
+    }
+}
+
+@media (max-width:1000px) {
+    .to-do {
+        width: 70%;
+    }
+
+    .grid-container {
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 200px 200px;
+        grid-row-gap: 10px;
+    }
+
+    .brands-a {
+        width: 70%;
+    }
+
+    table {
+        width: 70%;
+    }
+
+    .footer-a {
+        width: 70%;
+    }
+
+    .footer-a-1 {
+        width: 70%;
+    }
+
+    .footer-a-2 {
+        width: 70%;
+    }
+
+    .footer-b {
+        width: 70%;
+    }
+
+}
+
+
+@media (max-width:900px) {
+    .heading {
+        transform: translate(55%, 50%);
+    }
+
+    .footer-a {
+        flex-direction: column;
+        gap: 10px;
+
+    }
+}
+
+@media screen and (max-width:950px) {
+
+
+    .pic-ctn {
+        position: relative;
+        width: 70%;
+        height: 300px;
+        margin: auto;
+        margin-top: 15vh;
+        overflow: hidden;
+        justify-content: center;
+    }
+
+    .profile-card {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        width: 200px;
+        /* Adjust the width of each child as needed */
+        height: 200px;
+        /* Adjust the height of each child as needed */
+        background-color: #ccc;
+        /* Example background color */
+        opacity: 0;
+        animation: slideIn 5s ease infinite;
+    }
+
+    .profile-card h3 {
+        color: #fff;
+    }
+
+
+}
+
+@media screen and (max-width:400px) {
+    #title {
+        font-size: 21px;
+    }
+
+    h1,
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-50%);
+        opacity: 1;
+    }
+}
